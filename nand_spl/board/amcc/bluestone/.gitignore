@@ -1,0 +1,17 @@
+ndfc.c
+resetvec.S
+start.S
+cache.S
+tlb.c
+cpu_init.c
+speed.c
+4xx_uart.c
+44x_spd_ddr2.c
+4xx_ibm_ddr2_autocalib.c
+ppcstring.S
+ppccache.S
+time.c
+init.S
+nand_boot.c
+nand_ecc.c
+ecc.h
