@@ -1,0 +1,47 @@
+Summary:
+========
+
+This document provides the integration build steps of u-boot and the Broadcom 
+Minidriver Development Kit (MDK) for BCM53012/BCM53011/BCM53010.
+The MDK is compiled into u-boot, an additional 'mdk' command is installed.
+Example of starting up MDK in u-boot shell is also described in this document.
+
+
+Build Steps:
+============
+Environment parameter setup and the build directory are the same as building an
+u-boot only image. 
+
+To integrate the MDK, the environment variable that points to MDK source tree
+has to be set. For example:
+	$> export MDK="~/brcm/mdk-2.7.1"
+	
+Rules to build the images for BCM53012/BCM53011/BCM53010 are pre-defined in the
+main Makefile of u-boot source directory. For example, the rule for BCM53012 can
+be found in the Makefile as,
+	mdk-bcm53012:
+        	$(MAKE) CFG_MDK_DEBUG=1 CFG_LITTLE=1 MDK_CFLAGS="-DCDK_CONFIG_INCLUDE_FIELD_INFO=0 -DCDK_CONFIG_INCLUDE_BCM53012" ubootmdk
+
+To build the images of corresponding chips, run:
+	$> make O=./build-output mdk-bcm53012
+	$> make O=./build-output mdk-bcm53011
+	$> make O=./build-output mdk-bcm53010
+	
+To clean the build, run:
+	$> make O=./build-output cleanmdk
+	
+
+MDK command in u-boot:
+======================
+To start up the MDK, it is required to probe if a supported chip exists. It
+is done by,
+	u-boot> mdk probe
+	
+Then enter the MDK shell to access MDK shell commands.
+	u-boot> mdk shell
+	MDK.0>
+	
+Refer to MDK release documents for detailed information of MDK shell commands. 
+
+To return to the u-boot shell, type exit or quit at the MDK prompt.
+
