@@ -1,0 +1,44 @@
+Overview
+--------
+Debugger's ability to debug an application is constrained by the
+architecture's debug IP / run-control solution that may impose certain
+requirements for the application itself.
+
+Similarly, when referring to the e500 and e500v2 architecture, there are two
+basic rules any application has to respect in order to allow full debugging
+support:
+        1. Keep MSR[DE] bit set
+        2. Have a valid opcode that can be fetched from the debug exception
+	vector [IVPR|IVOR15].
+Where:
+	MSR  : Machine State register
+	IVPR : Interrupt Vector Prefix Register
+	IVOR : Interrupt Vector Offset Register
+
+Depending upon above 2 points there various place in powerpc/mpc85xx/ code
+which break the rules:
+	- MSR[DE] is not se
+        - Changing the context with a rfi instruction, but omitting to preserve
+	the [DE] bit in SRR1
+	- Changing IVPR/IVOR15 to a new location, before that location is
+	  un-accessible
+        - Changing IVPR/IVOR15 to a location that does not have a valid opcode
+	at [IVOR|IVOR15]
+	- While executing in translated space (AS=1), whenever a debug
+	  exception is generated, the MSR[DS/IS] gets cleared and the processor
+	  tries to fetch an instruction from the debug exception vector
+	  (IVPR|IVOR15); since now we are in AS=0, the application needs to
+	  ensure the proper configuration to have IVOR|IVOR15 accessible from
+	  AS=0 also
+
+Config Switches:
+----------------
+CONFIG_E500_V1_V2		Enables code taking care of above mentioned rule.
+CONFIG_DEBUGGER_TEMP_TLB	Define temporary TLB number.
+				It will be used to create temporary TLB for AS0
+				during execution in AS1. The TLB entry will be
+				created for debug exception vector.
+				Becuase on debug exception MSR[DS/IS] get
+				cleared i.e.  execution space is shifted back
+				to AS0 and a TLB is required to have debug
+				exception vecor accessible.
