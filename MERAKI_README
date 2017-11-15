@@ -1,0 +1,7 @@
+Build instructions:
+
+cd path/to/u-boot
+export PATH=`pwd`:$PATH #for the byteswap command
+./meraki -dnand
+
+the boot-loader ready to be loaded onto nand is u-boot-nand.bin

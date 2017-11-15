@@ -1,0 +1,38 @@
+#!/bin/bash
+# my_make function:
+# $1 : board name
+# $2 : make config option : ocm, ddr, nand
+# $3 : -s, silent or not
+
+function my_make ()
+{
+	echo "#### Make $1_$2_config for $1 board ####";
+	make distclean;make mrproper;make $1_$2_config;make -j32 $3;
+	exit $?
+}
+
+echo ""
+make clean;
+case $1 in
+	-c)
+		make distclean;make mrproper;
+		exit;
+		;;
+	-a)
+		my_make $0 ocm -s;
+		my_make $0 ddr -s;
+		my_make $0 nand -s;
+		;;
+	-docm)
+		my_make $0 ocm $2
+		;;
+	-dddr)
+		my_make $0 ddr $2
+		;;
+	-dnand)
+		my_make $0 nand $2
+		;;
+	*)
+		;;		
+esac
+

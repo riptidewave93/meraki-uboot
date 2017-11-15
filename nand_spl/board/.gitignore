@@ -1,0 +1,7 @@
+*.c
+*.h
+*.S
+*.bin
+*.disasm
+*.map
+u-boot-spl
