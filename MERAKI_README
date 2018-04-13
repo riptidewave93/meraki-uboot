@@ -1,0 +1,9 @@
+Build instructions:
+
+export CROSS_COMPILE=/PATH/TO/ROUTER/CHECKOUT/openwrt/staging_dir_powerpc/bin/powerpc-linux-uclibc-
+make mrproper
+make bluestone_nand2kwoecc_config
+make
+
+The final result is the u-boot-nand.bin, which is
+the raw bootloader image.
