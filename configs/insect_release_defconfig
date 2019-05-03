@@ -1,0 +1,823 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# U-Boot 2017.07 Configuration
+#
+CONFIG_CREATE_ARCH_SYMLINK=y
+# CONFIG_ARC is not set
+CONFIG_ARM=y
+# CONFIG_M68K is not set
+# CONFIG_MICROBLAZE is not set
+# CONFIG_MIPS is not set
+# CONFIG_NDS32 is not set
+# CONFIG_NIOS2 is not set
+# CONFIG_PPC is not set
+# CONFIG_SANDBOX is not set
+# CONFIG_SH is not set
+# CONFIG_X86 is not set
+# CONFIG_XTENSA is not set
+CONFIG_SYS_ARCH="arm"
+CONFIG_SYS_CPU="armv7"
+CONFIG_SYS_VENDOR="qca/arm"
+CONFIG_SYS_BOARD="ipq40xx"
+CONFIG_SYS_CONFIG_NAME="ipq40xx_cdp"
+
+#
+# ARM architecture
+#
+CONFIG_HAS_VBAR=y
+CONFIG_HAS_THUMB2=y
+CONFIG_ARM_ASM_UNIFIED=y
+CONFIG_CPU_V7=y
+CONFIG_SYS_ARM_ARCH=7
+CONFIG_SYS_CACHE_SHIFT_6=y
+CONFIG_SYS_CACHELINE_SIZE=64
+# CONFIG_ARM_SMCCC is not set
+# CONFIG_SEMIHOSTING is not set
+# CONFIG_SYS_THUMB_BUILD is not set
+# CONFIG_SPL_SYS_THUMB_BUILD is not set
+# CONFIG_SYS_L2CACHE_OFF is not set
+# CONFIG_ENABLE_ARM_SOC_BOOT0_HOOK is not set
+# CONFIG_ARM_CORTEX_CPU_IS_UP is not set
+CONFIG_USE_ARCH_MEMCPY=y
+# CONFIG_SPL_USE_ARCH_MEMCPY is not set
+CONFIG_USE_ARCH_MEMSET=y
+# CONFIG_SPL_USE_ARCH_MEMSET is not set
+# CONFIG_ARM64_SUPPORT_AARCH32 is not set
+# CONFIG_ARCH_AT91 is not set
+# CONFIG_TARGET_EDB93XX is not set
+# CONFIG_TARGET_ASPENITE is not set
+# CONFIG_TARGET_GPLUGD is not set
+# CONFIG_ARCH_DAVINCI is not set
+CONFIG_ARCH_IPQ40xx=y
+# CONFIG_ARCH_IPQ806x is not set
+# CONFIG_KIRKWOOD is not set
+# CONFIG_ARCH_MVEBU is not set
+# CONFIG_TARGET_DEVKIT3250 is not set
+# CONFIG_TARGET_WORK_92105 is not set
+# CONFIG_TARGET_MX25PDK is not set
+# CONFIG_TARGET_ZMX25 is not set
+# CONFIG_TARGET_APF27 is not set
+# CONFIG_TARGET_APX4DEVKIT is not set
+# CONFIG_TARGET_XFI3 is not set
+# CONFIG_TARGET_M28EVK is not set
+# CONFIG_TARGET_MX23EVK is not set
+# CONFIG_TARGET_MX28EVK is not set
+# CONFIG_TARGET_MX23_OLINUXINO is not set
+# CONFIG_TARGET_BG0900 is not set
+# CONFIG_TARGET_SANSA_FUZE_PLUS is not set
+# CONFIG_TARGET_SC_SPS_1 is not set
+# CONFIG_ORION5X is not set
+# CONFIG_TARGET_SPEAR300 is not set
+# CONFIG_TARGET_SPEAR310 is not set
+# CONFIG_TARGET_SPEAR320 is not set
+# CONFIG_TARGET_SPEAR600 is not set
+# CONFIG_TARGET_STV0991 is not set
+# CONFIG_TARGET_X600 is not set
+# CONFIG_TARGET_IMX31_PHYCORE is not set
+# CONFIG_TARGET_IMX31_PHYCORE_EET is not set
+# CONFIG_TARGET_MX31ADS is not set
+# CONFIG_TARGET_MX31PDK is not set
+# CONFIG_TARGET_WOODBURN is not set
+# CONFIG_TARGET_WOODBURN_SD is not set
+# CONFIG_TARGET_FLEA3 is not set
+# CONFIG_TARGET_MX35PDK is not set
+# CONFIG_ARCH_BCM283X is not set
+# CONFIG_TARGET_VEXPRESS_CA15_TC2 is not set
+# CONFIG_TARGET_VEXPRESS_CA5X2 is not set
+# CONFIG_TARGET_VEXPRESS_CA9X4 is not set
+# CONFIG_TARGET_BCM23550_W1D is not set
+# CONFIG_TARGET_BCM28155_AP is not set
+# CONFIG_TARGET_BCMCYGNUS is not set
+# CONFIG_TARGET_BCMNSP is not set
+# CONFIG_TARGET_BCMNS2 is not set
+# CONFIG_ARCH_EXYNOS is not set
+# CONFIG_ARCH_S5PC1XX is not set
+# CONFIG_ARCH_HIGHBANK is not set
+# CONFIG_ARCH_INTEGRATOR is not set
+# CONFIG_ARCH_KEYSTONE is not set
+# CONFIG_ARCH_OMAP2PLUS is not set
+# CONFIG_ARCH_MESON is not set
+# CONFIG_ARCH_MX7ULP is not set
+# CONFIG_ARCH_MX7 is not set
+# CONFIG_ARCH_MX6 is not set
+# CONFIG_ARCH_MX5 is not set
+# CONFIG_ARCH_RMOBILE is not set
+# CONFIG_TARGET_S32V234EVB is not set
+# CONFIG_ARCH_SNAPDRAGON is not set
+# CONFIG_ARCH_SOCFPGA is not set
+# CONFIG_ARCH_SUNXI is not set
+# CONFIG_TARGET_TS4600 is not set
+# CONFIG_ARCH_VF610 is not set
+# CONFIG_ARCH_ZYNQ is not set
+# CONFIG_ARCH_ZYNQMP is not set
+# CONFIG_TEGRA is not set
+# CONFIG_TARGET_VEXPRESS64_AEMV8A is not set
+# CONFIG_TARGET_VEXPRESS64_BASE_FVP is not set
+# CONFIG_TARGET_VEXPRESS64_BASE_FVP_DRAM is not set
+# CONFIG_TARGET_VEXPRESS64_JUNO is not set
+# CONFIG_TARGET_LS2080A_EMU is not set
+# CONFIG_TARGET_LS2080A_SIMU is not set
+# CONFIG_TARGET_LS2080AQDS is not set
+# CONFIG_TARGET_LS2080ARDB is not set
+# CONFIG_TARGET_LS2081ARDB is not set
+# CONFIG_TARGET_HIKEY is not set
+# CONFIG_TARGET_LS1012AQDS is not set
+# CONFIG_TARGET_LS1012ARDB is not set
+# CONFIG_TARGET_LS1012AFRDM is not set
+# CONFIG_TARGET_LS1021AQDS is not set
+# CONFIG_TARGET_LS1021ATWR is not set
+# CONFIG_TARGET_LS1021AIOT is not set
+# CONFIG_TARGET_LS1043AQDS is not set
+# CONFIG_TARGET_LS1043ARDB is not set
+# CONFIG_TARGET_LS1046AQDS is not set
+# CONFIG_TARGET_LS1046ARDB is not set
+# CONFIG_TARGET_H2200 is not set
+# CONFIG_TARGET_ZIPITZ2 is not set
+# CONFIG_TARGET_COLIBRI_PXA270 is not set
+# CONFIG_ARCH_UNIPHIER is not set
+# CONFIG_STM32 is not set
+# CONFIG_ARCH_STI is not set
+# CONFIG_ARCH_ROCKCHIP is not set
+# CONFIG_TARGET_THUNDERX_88XX is not set
+# CONFIG_ARCH_ASPEED is not set
+CONFIG_SYS_TEXT_BASE=0x87300000
+CONFIG_SYS_MALLOC_F_LEN=0x400
+CONFIG_IDENT_STRING=""
+# CONFIG_VIDEO is not set
+# CONFIG_ARMV7_LPAE is not set
+# CONFIG_CMD_DEKBLOB is not set
+# CONFIG_CMD_HDMIDETECT is not set
+
+#
+# QCOM IPQ40XX platforms
+#
+CONFIG_EEPROM_I2C_ADDR=0x50
+CONFIG_CPU_CONTEXT_DUMP_BASE=0x87B00000
+CONFIG_CPU_CONTEXT_DUMP_SIZE=0x80000
+CONFIG_QPIC_NAND_NAND_INFO_IDX=0
+# CONFIG_IPQ_SWITCH_ATHRS17 is not set
+# CONFIG_IPQ_SWITCH_QCA8511 is not set
+CONFIG_IPQ_MAX_SPI_DEVICE=2
+CONFIG_QCA_SMEM_BASE=0x87e00000
+CONFIG_ENV_SIZE_MAX=0x40000
+CONFIG_IPQ_APPSBL_DLOAD=y
+CONFIG_IPQ_MAX_NAND_DEVICE=1
+CONFIG_QCA_COMMON=y
+
+#
+# ARM debug
+#
+# CONFIG_DEBUG_LL is not set
+CONFIG_DEFAULT_DEVICE_TREE="insect"
+# CONFIG_DEBUG_UART is not set
+# CONFIG_AHCI is not set
+
+#
+# General setup
+#
+CONFIG_LOCALVERSION="-RELEASE"
+CONFIG_LOCALVERSION_AUTO=y
+CONFIG_CC_OPTIMIZE_FOR_SIZE=y
+# CONFIG_DISTRO_DEFAULTS is not set
+CONFIG_SYS_MALLOC_F=y
+CONFIG_EXPERT=y
+CONFIG_SYS_MALLOC_CLEAR_ON_INIT=y
+# CONFIG_TOOLS_DEBUG is not set
+# CONFIG_PHYS_64BIT is not set
+CONFIG_MERAKI_RELEASE=y
+
+#
+# Boot images
+#
+CONFIG_FIT=y
+CONFIG_FIT_ENABLE_SHA256_SUPPORT=y
+# CONFIG_FIT_SIGNATURE is not set
+# CONFIG_FIT_VERBOSE is not set
+# CONFIG_FIT_BEST_MATCH is not set
+# CONFIG_OF_BOARD_SETUP is not set
+# CONFIG_OF_SYSTEM_SETUP is not set
+# CONFIG_OF_STDOUT_VIA_ALIAS is not set
+CONFIG_SYS_EXTRA_OPTIONS=""
+CONFIG_ARCH_FIXUP_FDT_MEMORY=y
+
+#
+# API
+#
+# CONFIG_API is not set
+
+#
+# Boot timing
+#
+# CONFIG_BOOTSTAGE is not set
+CONFIG_BOOTSTAGE_USER_COUNT=20
+CONFIG_BOOTSTAGE_RECORD_COUNT=30
+CONFIG_BOOTSTAGE_STASH_ADDR=0
+CONFIG_BOOTSTAGE_STASH_SIZE=4096
+
+#
+# Boot media
+#
+# CONFIG_NAND_BOOT is not set
+# CONFIG_ONENAND_BOOT is not set
+# CONFIG_QSPI_BOOT is not set
+# CONFIG_SATA_BOOT is not set
+# CONFIG_SD_BOOT is not set
+# CONFIG_SPI_BOOT is not set
+
+#
+# Environment
+#
+CONFIG_BOOTDELAY=0
+
+#
+# Console
+#
+# CONFIG_CONSOLE_RECORD is not set
+CONFIG_SILENT_CONSOLE=y
+CONFIG_SILENT_U_BOOT_ONLY=y
+CONFIG_SILENT_CONSOLE_UPDATE_ON_SET=y
+# CONFIG_SILENT_CONSOLE_UPDATE_ON_RELOC is not set
+# CONFIG_PRE_CONSOLE_BUFFER is not set
+# CONFIG_CONSOLE_MUX is not set
+# CONFIG_SYS_CONSOLE_IS_IN_ENV is not set
+# CONFIG_SYS_CONSOLE_OVERWRITE_ROUTINE is not set
+# CONFIG_SYS_CONSOLE_ENV_OVERWRITE is not set
+# CONFIG_SYS_CONSOLE_INFO_QUIET is not set
+# CONFIG_SYS_STDIO_DEREGISTER is not set
+CONFIG_DEFAULT_FDT_FILE=""
+CONFIG_VERSION_VARIABLE=y
+# CONFIG_DISPLAY_CPUINFO is not set
+CONFIG_DISPLAY_BOARDINFO=y
+
+#
+# Start-up hooks
+#
+# CONFIG_ARCH_EARLY_INIT_R is not set
+# CONFIG_ARCH_MISC_INIT is not set
+# CONFIG_BOARD_EARLY_INIT_F is not set
+
+#
+# Security support
+#
+CONFIG_HASH=y
+
+#
+# SPL / TPL
+#
+
+#
+# Command line interface
+#
+CONFIG_CMDLINE=y
+CONFIG_HUSH_PARSER=y
+CONFIG_SYS_PROMPT="=> "
+
+#
+# Autoboot options
+#
+CONFIG_AUTOBOOT=y
+CONFIG_AUTOBOOT_KEYED=y
+CONFIG_AUTOBOOT_PROMPT="Autoboot in %d seconds\n"
+# CONFIG_AUTOBOOT_ENCRYPTION is not set
+CONFIG_AUTOBOOT_DELAY_STR=""
+CONFIG_AUTOBOOT_STOP_STR="xyzzy"
+# CONFIG_AUTOBOOT_KEYED_CTRLC is not set
+
+#
+# FASTBOOT
+#
+# CONFIG_FASTBOOT is not set
+
+#
+# Commands
+#
+
+#
+# Info commands
+#
+# CONFIG_CMD_BDI is not set
+# CONFIG_CMD_CONFIG is not set
+# CONFIG_CMD_CONSOLE is not set
+# CONFIG_CMD_CPU is not set
+# CONFIG_CMD_LICENSE is not set
+
+#
+# Boot commands
+#
+CONFIG_CMD_BOOTD=y
+CONFIG_CMD_BOOTM=y
+# CONFIG_CMD_BOOTZ is not set
+# CONFIG_CMD_BOOTMENU is not set
+# CONFIG_CMD_ELF is not set
+CONFIG_CMD_FDT=y
+CONFIG_CMD_GO=y
+CONFIG_CMD_RUN=y
+# CONFIG_CMD_IMI is not set
+# CONFIG_CMD_IMLS is not set
+# CONFIG_CMD_XIMG is not set
+# CONFIG_CMD_POWEROFF is not set
+
+#
+# Environment commands
+#
+# CONFIG_CMD_ASKENV is not set
+CONFIG_CMD_EXPORTENV=y
+CONFIG_CMD_IMPORTENV=y
+CONFIG_CMD_EDITENV=y
+# CONFIG_CMD_GREPENV is not set
+CONFIG_CMD_SAVEENV=y
+CONFIG_CMD_ENV_EXISTS=y
+# CONFIG_CMD_ENV_CALLBACK is not set
+# CONFIG_CMD_ENV_FLAGS is not set
+
+#
+# Memory commands
+#
+CONFIG_CMD_MEMORY=y
+CONFIG_CMD_CRC32=y
+# CONFIG_CRC32_VERIFY is not set
+# CONFIG_CMD_EEPROM is not set
+# CONFIG_CMD_MD5SUM is not set
+# CONFIG_CMD_SHA1SUM is not set
+# CONFIG_LOOPW is not set
+# CONFIG_CMD_MEMTEST is not set
+# CONFIG_CMD_MX_CYCLIC is not set
+# CONFIG_CMD_MEMINFO is not set
+
+#
+# Compression commands
+#
+# CONFIG_CMD_LZMADEC is not set
+# CONFIG_CMD_UNZIP is not set
+# CONFIG_CMD_ZIP is not set
+
+#
+# Device access commands
+#
+# CONFIG_CMD_CLK is not set
+# CONFIG_CMD_DM is not set
+# CONFIG_CMD_DEMO is not set
+# CONFIG_CMD_IDE is not set
+# CONFIG_CMD_IO is not set
+# CONFIG_CMD_IOTRACE is not set
+# CONFIG_CMD_LOADB is not set
+# CONFIG_CMD_LOADS is not set
+# CONFIG_CMD_FLASH is not set
+# CONFIG_CMD_GPT is not set
+# CONFIG_CMD_ARMFLASH is not set
+# CONFIG_CMD_MMC is not set
+CONFIG_CMD_NAND=y
+# CONFIG_CMD_NAND_TRIMFFS is not set
+# CONFIG_CMD_NAND_LOCK_UNLOCK is not set
+# CONFIG_CMD_NAND_TORTURE is not set
+# CONFIG_CMD_PART is not set
+# CONFIG_CMD_SF is not set
+# CONFIG_CMD_SPI is not set
+CONFIG_CMD_I2C=y
+# CONFIG_CMD_USB is not set
+# CONFIG_CMD_DFU is not set
+# CONFIG_CMD_USB_MASS_STORAGE is not set
+# CONFIG_CMD_FPGA is not set
+# CONFIG_CMD_FPGAD is not set
+# CONFIG_CMD_FUSE is not set
+# CONFIG_CMD_GPIO is not set
+# CONFIG_CMD_FDC is not set
+
+#
+# Shell scripting commands
+#
+CONFIG_CMD_ECHO=y
+CONFIG_CMD_ITEST=y
+CONFIG_CMD_SOURCE=y
+CONFIG_CMD_SETEXPR=y
+
+#
+# Network commands
+#
+# CONFIG_CMD_NET is not set
+# CONFIG_CMD_TFTPPUT is not set
+# CONFIG_CMD_TFTPSRV is not set
+# CONFIG_CMD_RARP is not set
+# CONFIG_CMD_DHCP is not set
+# CONFIG_CMD_PXE is not set
+# CONFIG_CMD_NFS is not set
+# CONFIG_CMD_MII is not set
+# CONFIG_CMD_PING is not set
+# CONFIG_CMD_CDP is not set
+# CONFIG_CMD_SNTP is not set
+# CONFIG_CMD_DNS is not set
+# CONFIG_CMD_LINK_LOCAL is not set
+# CONFIG_CMD_ETHSW is not set
+
+#
+# Misc commands
+#
+# CONFIG_CMD_BSP is not set
+# CONFIG_CMD_CACHE is not set
+# CONFIG_CMD_DISPLAY is not set
+# CONFIG_CMD_LED is not set
+# CONFIG_CMD_DATE is not set
+# CONFIG_CMD_TIME is not set
+# CONFIG_CMD_GETTIME is not set
+# CONFIG_CMD_MISC is not set
+# CONFIG_CMD_TIMER is not set
+# CONFIG_CMD_QFW is not set
+
+#
+# Power commands
+#
+
+#
+# Security commands
+#
+# CONFIG_CMD_AES is not set
+# CONFIG_CMD_BLOB is not set
+# CONFIG_CMD_HASH is not set
+
+#
+# Firmware commands
+#
+
+#
+# Filesystem commands
+#
+# CONFIG_CMD_EXT2 is not set
+# CONFIG_CMD_EXT4 is not set
+# CONFIG_CMD_FAT is not set
+CONFIG_CMD_FS_GENERIC=y
+# CONFIG_CMD_FS_UUID is not set
+# CONFIG_CMD_JFFS2 is not set
+
+#
+# Debug commands
+#
+# CONFIG_CMD_BEDBUG is not set
+# CONFIG_CMD_DIAG is not set
+# CONFIG_CMD_KGDB is not set
+CONFIG_CMD_UBI=y
+# CONFIG_CMD_UBIFS is not set
+
+#
+# Partition Types
+#
+CONFIG_PARTITIONS=y
+# CONFIG_MAC_PARTITION is not set
+# CONFIG_DOS_PARTITION is not set
+# CONFIG_ISO_PARTITION is not set
+# CONFIG_AMIGA_PARTITION is not set
+# CONFIG_EFI_PARTITION is not set
+# CONFIG_PARTITION_UUIDS is not set
+CONFIG_SUPPORT_OF_CONTROL=y
+
+#
+# Device Tree Control
+#
+CONFIG_OF_CONTROL=y
+# CONFIG_OF_BOARD_FIXUP is not set
+# CONFIG_OF_LIVE is not set
+# CONFIG_OF_SEPARATE is not set
+CONFIG_OF_EMBED=y
+# CONFIG_OF_BOARD is not set
+CONFIG_NET=y
+# CONFIG_NET_RANDOM_ETHADDR is not set
+# CONFIG_NETCONSOLE is not set
+CONFIG_NET_TFTP_VARS=y
+CONFIG_BOOTP_PXE_CLIENTARCH=0x15
+CONFIG_BOOTP_VCI_STRING="U-Boot.armv7"
+
+#
+# Device Drivers
+#
+
+#
+# Generic Driver Options
+#
+CONFIG_DM=y
+CONFIG_DM_WARN=y
+CONFIG_DM_DEVICE_REMOVE=y
+CONFIG_DM_STDIO=y
+CONFIG_DM_SEQ_ALIAS=y
+# CONFIG_SPL_DM_SEQ_ALIAS is not set
+# CONFIG_REGMAP is not set
+# CONFIG_SPL_REGMAP is not set
+# CONFIG_DEVRES is not set
+# CONFIG_SIMPLE_BUS is not set
+CONFIG_OF_TRANSLATE=y
+CONFIG_DM_DEV_READ_INLINE=y
+# CONFIG_ADC is not set
+# CONFIG_ADC_EXYNOS is not set
+# CONFIG_ADC_SANDBOX is not set
+# CONFIG_BLK is not set
+# CONFIG_BLOCK_CACHE is not set
+
+#
+# SATA/SCSI device support
+#
+# CONFIG_IDE is not set
+
+#
+# Clock
+#
+# CONFIG_CLK is not set
+# CONFIG_CPU is not set
+
+#
+# Hardware crypto devices
+#
+# CONFIG_FSL_CAAM is not set
+# CONFIG_SYS_FSL_SEC_BE is not set
+# CONFIG_SYS_FSL_SEC_LE is not set
+
+#
+# Demo for driver model
+#
+# CONFIG_DM_DEMO is not set
+
+#
+# DFU support
+#
+
+#
+# DMA Support
+#
+# CONFIG_DMA is not set
+# CONFIG_TI_EDMA3 is not set
+
+#
+# FPGA support
+#
+# CONFIG_FPGA_ALTERA is not set
+# CONFIG_FPGA_XILINX is not set
+
+#
+# GPIO Support
+#
+# CONFIG_DM_GPIO is not set
+# CONFIG_INTEL_BROADWELL_GPIO is not set
+# CONFIG_IMX_RGPIO2P is not set
+# CONFIG_LPC32XX_GPIO is not set
+# CONFIG_VYBRID_GPIO is not set
+
+#
+# I2C support
+#
+CONFIG_DM_I2C=y
+# CONFIG_DM_I2C_COMPAT is not set
+# CONFIG_I2C_SET_DEFAULT_BUS_NUM is not set
+# CONFIG_SYS_I2C_FSL is not set
+# CONFIG_SYS_I2C_DW is not set
+# CONFIG_SYS_I2C_INTEL is not set
+# CONFIG_SYS_I2C_IMX_LPI2C is not set
+# CONFIG_SYS_I2C_ROCKCHIP is not set
+# CONFIG_SYS_I2C_MVTWSI is not set
+CONFIG_IPQ40XX_I2C=y
+# CONFIG_I2C_MUX is not set
+# CONFIG_DM_KEYBOARD is not set
+# CONFIG_CROS_EC_KEYB is not set
+
+#
+# LED Support
+#
+# CONFIG_LED is not set
+# CONFIG_LED_STATUS is not set
+
+#
+# Mailbox Controller Support
+#
+# CONFIG_DM_MAILBOX is not set
+
+#
+# Memory Controller drivers
+#
+
+#
+# Multifunction device drivers
+#
+# CONFIG_MISC is not set
+# CONFIG_CROS_EC is not set
+# CONFIG_DS4510 is not set
+# CONFIG_FSL_SEC_MON is not set
+# CONFIG_MXC_OCOTP is not set
+# CONFIG_NUVOTON_NCT6102D is not set
+# CONFIG_PWRSEQ is not set
+# CONFIG_PCA9551_LED is not set
+# CONFIG_WINBOND_W83627 is not set
+
+#
+# MMC Host controller Support
+#
+# CONFIG_MMC is not set
+# CONFIG_DM_MMC is not set
+
+#
+# MTD Support
+#
+# CONFIG_MTD is not set
+# CONFIG_MTD_NOR_FLASH is not set
+
+#
+# NAND Device Support
+#
+CONFIG_SYS_NAND_SELF_INIT=y
+# CONFIG_NAND_DENALI is not set
+# CONFIG_NAND_VF610_NFC is not set
+# CONFIG_NAND_PXA3XX is not set
+# CONFIG_NAND_ARASAN is not set
+# CONFIG_NAND_ZYNQ is not set
+CONFIG_QPIC_NAND=y
+
+#
+# Generic NAND options
+#
+
+#
+# SPI Flash Support
+#
+# CONFIG_SPI_FLASH is not set
+
+#
+# UBI support
+#
+CONFIG_MTD_UBI=y
+CONFIG_MTD_UBI_WL_THRESHOLD=4096
+CONFIG_MTD_UBI_BEB_LIMIT=20
+# CONFIG_MTD_UBI_FASTMAP is not set
+# CONFIG_BITBANGMII is not set
+# CONFIG_MV88E6352_SWITCH is not set
+# CONFIG_PHYLIB is not set
+# CONFIG_DM_ETH is not set
+# CONFIG_NETDEVICES is not set
+# CONFIG_PCI is not set
+
+#
+# PHY Subsystem
+#
+# CONFIG_PHY is not set
+# CONFIG_SPL_PHY is not set
+# CONFIG_MVEBU_COMPHY_SUPPORT is not set
+
+#
+# Pin controllers
+#
+# CONFIG_PINCTRL is not set
+
+#
+# Power
+#
+
+#
+# Power Domain Support
+#
+# CONFIG_POWER_DOMAIN is not set
+# CONFIG_DM_PMIC is not set
+# CONFIG_PMIC_AS3722 is not set
+# CONFIG_POWER_MC34VR500 is not set
+# CONFIG_DM_REGULATOR is not set
+# CONFIG_DM_PWM is not set
+# CONFIG_PWM_SANDBOX is not set
+# CONFIG_RAM is not set
+
+#
+# Remote Processor drivers
+#
+
+#
+# Reset Controller Support
+#
+# CONFIG_DM_RESET is not set
+
+#
+# Real Time Clock
+#
+# CONFIG_DM_RTC is not set
+
+#
+# Serial drivers
+#
+CONFIG_BAUDRATE=115200
+# CONFIG_DM_SERIAL is not set
+# CONFIG_DEBUG_UART_SKIP_INIT is not set
+# CONFIG_ATMEL_USART is not set
+# CONFIG_FSL_LPUART is not set
+# CONFIG_MVEBU_A3700_UART is not set
+# CONFIG_SYS_NS16550 is not set
+# CONFIG_PXA_SERIAL is not set
+
+#
+# Sound support
+#
+# CONFIG_SOUND is not set
+
+#
+# SPI Support
+#
+# CONFIG_DM_SPI is not set
+# CONFIG_SOFT_SPI is not set
+# CONFIG_FSL_ESPI is not set
+# CONFIG_FSL_QSPI is not set
+# CONFIG_TI_QSPI is not set
+
+#
+# SPMI support
+#
+# CONFIG_SPMI is not set
+
+#
+# System reset device drivers
+#
+# CONFIG_SYSRESET is not set
+# CONFIG_SYSRESET_SYSCON is not set
+# CONFIG_SYSRESET_WATCHDOG is not set
+# CONFIG_DM_THERMAL is not set
+
+#
+# Timer Support
+#
+# CONFIG_TIMER is not set
+
+#
+# TPM support
+#
+# CONFIG_USB is not set
+
+#
+# Graphics support
+#
+# CONFIG_DM_VIDEO is not set
+# CONFIG_SYS_WHITE_ON_BLACK is not set
+
+#
+# TrueType Fonts
+#
+# CONFIG_VIDEO_VESA is not set
+# CONFIG_VIDEO_LCD_ANX9804 is not set
+# CONFIG_VIDEO_LCD_SSD2828 is not set
+# CONFIG_VIDEO_MVEBU is not set
+# CONFIG_I2C_EDID is not set
+# CONFIG_DISPLAY is not set
+# CONFIG_VIDEO_TEGRA20 is not set
+# CONFIG_VIDEO_BRIDGE is not set
+# CONFIG_LCD is not set
+
+#
+# Watchdog Timer Support
+#
+# CONFIG_BCM2835_WDT is not set
+# CONFIG_ULP_WATCHDOG is not set
+# CONFIG_WDT is not set
+# CONFIG_PHYS_TO_BUS is not set
+
+#
+# File systems
+#
+# CONFIG_FS_CBFS is not set
+# CONFIG_FS_FAT is not set
+# CONFIG_FS_JFFS2 is not set
+# CONFIG_FS_CRAMFS is not set
+
+#
+# Library routines
+#
+# CONFIG_CC_OPTIMIZE_LIBS_FOR_SPEED is not set
+CONFIG_HAVE_PRIVATE_LIBGCC=y
+# CONFIG_USE_PRIVATE_LIBGCC is not set
+CONFIG_SYS_HZ=1000
+CONFIG_USE_TINY_PRINTF=y
+# CONFIG_REGEX is not set
+# CONFIG_LIB_RAND is not set
+# CONFIG_SPL_TINY_MEMSET is not set
+# CONFIG_CMD_DHRYSTONE is not set
+
+#
+# Security support
+#
+# CONFIG_AES is not set
+CONFIG_RSA=y
+# CONFIG_SPL_RSA is not set
+CONFIG_RSA_SOFTWARE_EXP=y
+# CONFIG_TPM is not set
+
+#
+# Hashing Support
+#
+CONFIG_SHA1=y
+CONFIG_SHA256=y
+# CONFIG_SHA_HW_ACCEL is not set
+CONFIG_MD5=y
+
+#
+# Compression Support
+#
+# CONFIG_LZ4 is not set
+# CONFIG_LZMA is not set
+# CONFIG_ERRNO_STR is not set
+CONFIG_OF_LIBFDT=y
+# CONFIG_OF_LIBFDT_OVERLAY is not set
+# CONFIG_SPL_OF_LIBFDT is not set
+# CONFIG_FDT_FIXUP_PARTITIONS is not set
+
+#
+# System tables
+#
+# CONFIG_EFI_LOADER is not set
+# CONFIG_UNIT_TEST is not set

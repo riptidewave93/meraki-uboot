@@ -1,0 +1,52 @@
+menu "QCOM IPQ806X platforms"
+	depends on ARCH_IPQ806x
+
+config SYS_VENDOR
+	default "qca/arm"
+
+config SYS_BOARD
+	default "ipq806x"
+
+config SYS_CONFIG_NAME
+	default "ipq806x_cdp"
+
+config SYS_TEXT_BASE
+	hex "Text Base"
+	default 0x41200000
+
+config IPQ_APPSBL_DLOAD
+	bool
+	default y
+
+config MBN_HEADER
+	bool "Add MBN header to U-Boot"
+	default y
+
+config IPQ_APPSBL_IMG_TYPE
+	hex
+	default 0x5
+
+config EEPROM_I2C_ADDR
+	hex "EEPROM's I2C Addr"
+	help
+	  This is the address of the EEPROM on the I2C bus.
+
+config ENV_SIZE_MAX
+	hex
+	default 0x40000
+
+config IPQ_SPI_NAND_INFO_IDX
+	int
+	default 1
+
+config IPQ_NAND_NAND_INFO_IDX
+	int
+	default 0
+
+config IPQ_FIRMWARE
+	bool "Support NSS firmware loading using bootm"
+	default n
+
+source "board/qca/arm/Kconfig"
+
+endmenu

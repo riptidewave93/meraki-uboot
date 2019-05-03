@@ -1,0 +1,30 @@
+menu "QCOM IPQ40XX platforms"
+	depends on ARCH_IPQ40xx && NETDEVICES
+
+config IPQ40XX_EDMA
+	bool "IPQ40XX EDMA Driver"
+	default y
+
+config IPQ40XX_ESS
+	bool "IPQ40XX ESS Driver"
+	default y
+
+config QCA8075_PHY
+	bool "QCA8075 Phy"
+	default y
+
+config QCA8033_PHY
+	bool "QCA8033 Phy"
+	bool
+	default y
+
+config IPQ40XX_MDIO
+	bool "IPQ40XX MDIO Driver"
+	bool
+	default y
+
+config IPQ_NO_MACS
+	int
+	default 2
+
+endmenu

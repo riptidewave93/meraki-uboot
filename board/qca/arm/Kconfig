@@ -1,0 +1,35 @@
+config IPQ_SWITCH_ATHRS17
+	bool "Atheros S17"
+	depends on NETDEVICES
+	default n
+	help
+	  This supports Atheros S17.
+
+config IPQ_SWITCH_QCA8511
+	bool "8511 Switch"
+	default n
+	depends on NETDEVICES
+	help
+	  This supports 8511 Switch chip.
+
+config IPQ_MAX_SPI_DEVICE
+	int
+	default 2 if ARCH_IPQ40xx
+	default 1 if ARCH_IPQ806x
+
+config QCA_SMEM_BASE
+	hex
+	default 0x87e00000 if ARCH_IPQ40xx
+	default 0x41000000 if ARCH_IPQ806x
+
+config ENV_SIZE_MAX
+	hex "Maximum Environment size"
+	default 0x40000
+
+config IPQ_APPSBL_DLOAD
+	bool
+	default y
+
+config IPQ_MAX_NAND_DEVICE
+	int
+	default 1

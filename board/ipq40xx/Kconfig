@@ -1,0 +1,36 @@
+menu "QCOM IPQ40XX platforms"
+	depends on ARCH_IPQ40xx
+
+config SYS_VENDOR
+	default "qca/arm"
+
+config SYS_BOARD
+	default "ipq40xx"
+
+config SYS_CONFIG_NAME
+	default "ipq40xx_cdp"
+
+config EEPROM_I2C_ADDR
+	hex "EEPROM's I2C Addr"
+	help
+	  This is the address of the EEPROM on the I2C bus.
+
+config CPU_CONTEXT_DUMP_BASE
+	hex
+	default 0x87B00000
+
+config CPU_CONTEXT_DUMP_SIZE
+	hex
+	default 0x80000
+
+config QPIC_NAND_NAND_INFO_IDX
+	int
+	default 0
+
+config SYS_TEXT_BASE
+	hex "Text Base"
+	default 0x87300000
+
+source "board/qca/arm/Kconfig"
+
+endmenu

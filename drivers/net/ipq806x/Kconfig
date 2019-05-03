@@ -1,0 +1,12 @@
+menu "QCOM IPQ806X platforms"
+	depends on ARCH_IPQ806x && NETDEVICES
+
+config IPQ_SNPS_GMAC
+	bool "IPQ GMAC"
+
+config IPQ_MDIO
+	bool "IPQ806X MDIO Driver"
+	depends on IPQ_SNPS_GMAC
+	default y
+
+endmenu
